@@ -6,4 +6,4 @@ summary     'Module for managing drone CI'
 description 'Install and manage drone'
 license     'MIT License'
 
-dependency  'garethr/docker', '>= 0.11.2'
+dependency  'garethr/docker', '>= 0.11.1'
