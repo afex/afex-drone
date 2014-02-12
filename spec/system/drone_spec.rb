@@ -1,7 +1,7 @@
 require 'spec_helper_system'
 
 describe 'drone' do
-	context 'should download the .deb file' do
+	context 'should install correctly' do
 		pp = <<-EOS
 			class { 'drone': }
 		EOS
@@ -16,6 +16,10 @@ describe 'drone' do
 
 		describe file('/tmp/drone.deb') do
 			it { should be_file }
+		end
+
+		describe package('drone') do
+			it { should be_installed }
 		end
 	end
 end
