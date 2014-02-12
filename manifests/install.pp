@@ -1,0 +1,3 @@
+class drone::install {
+	
+}
