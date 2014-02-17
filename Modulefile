@@ -1,5 +1,5 @@
 name        'afex-drone'
-version     '0.0.1'
+version     '0.0.2'
 source      'git://github.com/afex/afex-drone.git'
 author      'Keith Thornhill'
 summary     'Module for managing drone CI'
