@@ -6,4 +6,5 @@ group :test do
 	gem 'serverspec'
 	gem 'specinfra'
 	gem 'rake'
+	gem 'beaker-librarian', git: 'https://github.com/afex/beaker-librarian'
 end

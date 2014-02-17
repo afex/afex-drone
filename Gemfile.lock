@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/afex/beaker-librarian
+  revision: 212d9cdec51cc2889909e24e4dbfa39cc6525969
+  specs:
+    beaker-librarian (0.0.1)
+      beaker
+      beaker-rspec
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -79,6 +87,7 @@ PLATFORMS
 
 DEPENDENCIES
   beaker
+  beaker-librarian!
   beaker-rspec
   rake
   serverspec

@@ -1,14 +1,13 @@
 require 'beaker-rspec/spec_helper'
 require 'beaker-rspec/helpers/serverspec'
-
-hosts.each do |host|
-	install_puppet
-end
+require 'beaker/librarian'
 
 RSpec.configure do |c|
 	proj_root = File.expand_path(File.join(File.dirname(__FILE__), '..'))
 
 	c.before :suite do
-		puppet_module_install(:source => proj_root, :module_name => 'drone')
+		install_puppet
+		install_librarian
+		librarian_install_modules(proj_root, 'drone')
 	end
 end

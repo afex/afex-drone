@@ -1,3 +1,4 @@
 .bundle
 .rspec_system
 vendor/bundle
+.vagrant
