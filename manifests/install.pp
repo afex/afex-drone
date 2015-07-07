@@ -1,6 +1,6 @@
 class drone::install {
 	exec { 'retrieve_drone':
-		command => "/usr/bin/wget http://downloads.drone.io/latest/drone.deb -O /tmp/drone.deb",
+		command => "/usr/bin/wget http://downloads.drone.io/master/drone.deb -O /tmp/drone.deb",
 		creates => "/tmp/drone.deb",
 	}
 
